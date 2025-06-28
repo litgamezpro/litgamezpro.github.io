@@ -31,12 +31,30 @@
     <div class="frame-box">
       <span class="blur-bg" style="background-image: url('{{LOGO}}');"></span>
       <img src='{{LOGO}}' alt='{$name}' />
-      <a href="{{CANONICAL}}" target="_blank" rel="nofollow" class="btn btn-orange">Play Now</a>      
+      <a href="{{CANONICAL}}" target="_blank" rel="nofollow" class="btn btn-orange js-exter-link">Play Now</a>      
     </div>
   <div>{{DESCRIPTION}}</div>
     </div>
   <footer align="center">
     <p><a href="https://litgamez.com" target="_blank" rel="nofollow">Visit Full Game Site</a></p>
   </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".js-exter-link");
+    const utmParams = "utm_source=github&utm_medium=referral&utm_campaign=July26";
+
+    links.forEach(link => {
+      const url = new URL(link.href);
+      
+      // Only add if parameters are not already present
+      if (!url.searchParams.has("utm_source")) {
+        url.searchParams.set("utm_source", "github");
+        url.searchParams.set("utm_medium", "referral");
+        url.searchParams.set("utm_campaign", "July25");
+        link.href = url.toString();
+      }
+    });
+  });
+  </script>
 </body>
 </html>
