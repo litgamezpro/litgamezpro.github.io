@@ -55,7 +55,7 @@ $indexContent = <<<HTML
     <link rel="icon" href="https://litgamez.com/favicon.ico?v=1" type="image/x-icon" size="16x16" />
     <link rel="icon" type="image/png" href="https://litgamez.com/favicon.ico?v=1" />
 
-  <link rel="stylesheet" href="/games/style.css" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <h1>Online Free Games - Play 24x7</h1>
@@ -66,7 +66,7 @@ foreach ($games as $game) {
     $slug = htmlspecialchars($game['slug']);
     $name = htmlspecialchars($game['name']);
     $logo = htmlspecialchars($game['logo']);
-    $indexContent .= "    <li><a href=\"/games/{$slug}.html\"><img src='https://litgamez.com/uploads/logos/{$logo}' alt='{$name}' /><h3>{$name}</h3></a></li>\n";
+    $indexContent .= "    <li><a href=\"/play/{$slug}.html\"><img src='https://litgamez.com/uploads/logos/{$logo}' alt='{$name}' /><h3>{$name}</h3></a></li>\n";
 }
 
 $indexContent .= <<<HTML
@@ -87,7 +87,7 @@ $sitemap .= "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
 foreach ($games as $game) {
     $slug = $game['slug'];
     $sitemap .= "  <url>\n";
-    $sitemap .= "    <loc>https://litgamezpro.github.io/games/{$slug}.html</loc>\n";
+    $sitemap .= "    <loc>https://litgamezpro.github.io/play/{$slug}.html</loc>\n";
     $sitemap .= "  </url>\n";
 }
 $sitemap .= "</urlset>";
