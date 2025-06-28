@@ -58,7 +58,8 @@ $indexContent = <<<HTML
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <h1>Online Free Games - Play 24x7</h1>
+  <h1 class="text-center text-white">Online Free Games - Play 24x7</h1>
+  <p class="text-center text-white">Enjoy free online games anytime, anywhere—no downloads needed! Explore action, puzzle, and multiplayer games with smooth gameplay, great graphics, and endless fun for solo players or friends.</p>
   <ul class="grid-view">
 HTML;
 
