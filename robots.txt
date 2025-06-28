@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://litgamezpro.github.io/games/sitemap.xml
