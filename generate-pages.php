@@ -2,7 +2,7 @@
 // LitGamez SEO Game Pages Generator
 
 $apiUrl = 'https://litgamez.com/api/getAllGames?getAll=true&popular=true&v=1';
-$outputDir = __DIR__ . '';
+$outputDir = __DIR__ . '/play';
 $template = file_get_contents(__DIR__ . '/template.html');
 
 // Ensure output directory exists
