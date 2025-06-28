@@ -23,12 +23,13 @@ foreach ($games as $game) {
     $cleaned = strip_tags($short_desc_1);
     $cleaned = preg_replace("/\s+/", " ", $cleaned);
     $short_desc = trim($cleaned);
+    $logo = 'https://litgamez.com/uploads/logos/'.$game['logo'];
 
     $link = "https://litgamez.com/en/g/{$slug}";
 
     $page = str_replace(
-        ['{{TITLE}}', '{{DESCRIPTION}}', '{{SHORT_DESCRIPTION}}', '{{SLUG}}', '{{CANONICAL}}'],
-        [$title, nl2br($desc), $short_desc, $slug, $link],
+        ['{{TITLE}}', '{{DESCRIPTION}}', '{{SHORT_DESCRIPTION}}', '{{SLUG}}', '{{CANONICAL}}', '{{LOGO}}'],
+        [$title, nl2br($desc), $short_desc, $slug, $link, $logo],
         $template
     );
 
@@ -58,7 +59,7 @@ $indexContent = <<<HTML
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <h1 class="text-center text-white">Online Free Games - Play 24x7</h1>
+  <h1 class="text-center text-white">Online Free Games - Play 24x7 - LitGamez</h1>
   <p class="text-center text-white">Enjoy free online games anytime, anywhere—no downloads needed! Explore action, puzzle, and multiplayer games with smooth gameplay, great graphics, and endless fun for solo players or friends.</p>
   <ul class="grid-view">
 HTML;
