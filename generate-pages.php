@@ -57,6 +57,15 @@ $indexContent = <<<HTML
     <link rel="icon" type="image/png" href="https://litgamez.com/favicon.ico?v=1" />
 
   <link rel="stylesheet" href="/style.css" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0JF86YZ3W4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0JF86YZ3W4');
+</script>
 </head>
 <body>
   <h1 class="text-center text-white">Online Free Games - Play 24x7 - LitGamez</h1>
