@@ -124,3 +124,5 @@ br {
     content: '';
     margin: 0;
 }
+.text-center{text-align: center !important;}
+.text-white{color:#fff !important;}
