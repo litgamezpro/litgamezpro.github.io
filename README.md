@@ -16,7 +16,7 @@ This repo hosts static HTML pages auto-generated from the [LitGamez API](https:/
 - Deploy to GitHub Pages
 
 **View Online:**  
-👉 [https://litgamezpro.github.io/games](https://litgamezpro.github.io/games)
+👉 [https://litgamezpro.github.io](https://litgamezpro.github.io)
 
 ## 📦 Technologies Used
 - PHP 8+
@@ -26,8 +26,8 @@ This repo hosts static HTML pages auto-generated from the [LitGamez API](https:/
 - GitHub Pages
 
 ## ⚡ Sample Pages
-- [Screw Nuts Puzzle](https://litgamezpro.github.io/games/screw-puzzle-nuts-bolts.html)
-- [Dino Game](https://litgamezpro.github.io/games/dino-game.html)
+- [Screw Nuts Puzzle](https://litgamezpro.github.io/play/screw-puzzle-nuts-bolts.html)
+- [Dino Game](https://litgamezpro.github.io/play/dino-game.html)
 
 ## 🔗 Main Website
 Visit the full game experience:  
